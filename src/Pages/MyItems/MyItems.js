@@ -8,29 +8,29 @@ const MyItems = () => {
     const [user] = useAuthState(auth)
     const [items, setItems] = useState([])
 
-    // useEffect(() => {
-    //     const getItems = async () => {
-    //         const email = user.email;
-    //         console.log(email);
-    //         const url = `https://tranquil-beyond-66752.herokuapp.com/product?email=${email}`;
+    useEffect(() => {
+        const getItems = async () => {
+            const email = user.email;
+            console.log(email);
+            const url = `https://tranquil-beyond-66752.herokuapp.com/product?email=${email}`;
 
-    //         try {
-    //             const { data } = await axios.get(url, {
-    //                 headers: {
-    //                     authorization: `Bearer ${localStorage.getItem('accessToken')}`,
-    //                     "content-type": "Application/json"
-    //                 }
-    //             })
-    //             setItems(data);
-    //         }
-    //         catch (error) {
-    //             console.log(error)
-    //         }
+            try {
+                const { data } = await axios.get(url, {
+                    headers: {
+                        authorization: `Bearer ${localStorage.getItem('accessToken')}`,
+                        "content-type": "Application/json"
+                    }
+                })
+                setItems(data);
+            }
+            catch (error) {
+                console.log(error)
+            }
 
-    //     }
-    //     getItems()
+        }
+        getItems()
 
-    // }, [user])
+    }, [user])
 
     // specific One item Delete:-
     const handleDelete = id => {

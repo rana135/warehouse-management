@@ -8,22 +8,25 @@ import './AddService.css'
 
 const AddService = () => {
     const [user] = useAuthState(auth)
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     // Product Added by Form:
-    const onSubmit = (data, event) => {
+    const onSubmit = (data) => {
         console.log(data)
-        event.target.reset()
         const url = `https://tranquil-beyond-66752.herokuapp.com/product`
         fetch(url, {
             method: 'POST',
             headers: {
-                'content-type': 'application/json',
+                'content-type': 'application/json'
             },
             body: JSON.stringify(data)
         })
             .then(res => res.json())
             .then(result => {
                 console.log(result);
+                if(result){
+                    toast.success("Item Added Successfully")
+                }
+                reset()
             })
     }
     return (
@@ -31,9 +34,11 @@ const AddService = () => {
             <h1 className='text-center mb-4'>Please add service</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='serviceAdd-input'>
-                    <input  className='mb-2' type="email" 
+                    <input value={user?.email} className='mb-2' type="email" 
                     {...register("email")}/>
                     <input placeholder='name' className='mb-2' {...register("name", { required: true, maxLength: 20 })} />
+                    <input placeholder='Description' className='mb-2' {...register("description", { required: true})} />
+                    <input placeholder='Supplier Name' className='mb-2' {...register("supplierName", { required: true, maxLength: 30 })} />
                     <input placeholder='price' className='mb-2' type="number" {...register("price")} />
                     <input placeholder='quantity' className='mb-2' type="number" {...register("quantity")} />
                     <input placeholder='img' className='mb-2' type="text" {...register("img")} />
