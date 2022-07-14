@@ -15,6 +15,7 @@ import ServiceDetails from './Pages/Home/ServiceDetails/ServiceDetails';
 import AddService from './Pages/AddService/AddService';
 import { ToastContainer } from 'react-toastify';
 import MyItems from './Pages/MyItems/MyItems';
+import Contact from './Pages/Contact/Contact';
 
 
 
@@ -42,6 +43,7 @@ function App() {
           </RequireAuth>
         } />
         <Route path="/addService" element={<AddService />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />

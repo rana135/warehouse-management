@@ -20,7 +20,7 @@ const Header = () => {
         <Navbar collapseOnSelect expand="lg" sticky='top' className='d-flex align-items-center nav' style={{background:"#414a4c"}}>
             <Container>
                 <Navbar.Brand as={Link} to="/">
-                    <h1 className='text-white me-3 project-title '>⭐Star Furniture</h1>
+                    <h3 className='text-white me-3 project-title '>⭐Star Furniture</h3>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -34,6 +34,7 @@ const Header = () => {
                                 <Nav.Link as={Link} to="myItem" className='text-white '>My Items</Nav.Link>
                             </>
                         }
+                        <Nav.Link as={Link} to="contact" className='text-white '>Contact</Nav.Link>
 
                     </Nav>
                     <div>

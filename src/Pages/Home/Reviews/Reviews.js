@@ -12,7 +12,7 @@ const Reviews = () => {
     }, [])
     return (
         <div className='customer-reviews'>
-            <h1 className='text-info' style={{ textAlign: "center", fontSize: "45px"}}>
+            <h1 className='text-info' style={{ textAlign: "center", fontSize: "35px"}}>
                 <Typed
                     strings={[
                         'Customer Reviews']}
