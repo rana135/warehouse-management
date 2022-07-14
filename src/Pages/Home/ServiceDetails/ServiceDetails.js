@@ -92,27 +92,6 @@ const ServiceDetails = () => {
                                     <h5>Sold:-{product.sold}</h5>
                                     <p>{product.description}</p>
                                     <h5>Supplier:-{product.supplierName}</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className='mt-3'>
-                    <div>
-                        <div data-aos="zoom-in-down">
-                            <div className='text-center mt-5 rounded-3
-                col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
-                                <div className='delivered'>
-                                    <div data-aos="zoom-in">
-                                        <div className='fs-1 text-white'>
-                                            Do you really want to Delivered it?
-                                        </div>
-                                    </div>
-                                    <h2 className='text-center mt-3 text-white'>Product name: {product.name}</h2>
-                                    <h2 className='text-center mt-3 text-white'>Quantity: {product.quantity}</h2>
-                                    <hr className='text-white' style={{ height: '3px' }} />
                                     <div className="d-flex justify-content-center">
                                         <Button onClick={() => handleUpdate()} variant="info" className='btn-lg mb-3 fw-bolder'>
                                             Delivered
@@ -121,20 +100,23 @@ const ServiceDetails = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
+                </div>
+
+                <div className='mt-3'>
                     <div data-aos="zoom-in-down">
                         <div className='text-center mt-5 mb-5 rounded-3
                 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
-                            <div className='delivered'>
+                            <div className='delivered text-white' style={{background:"#207398"}}>
                                 <div data-aos="zoom-in">
-                                    <div className='fs-1 text-white'>
+                                    <div className='fs-1 fw-bold'>
                                         Do you really want to restock inventory it?
                                     </div>
                                 </div>
-                                <h2 className='text-center mt-3 text-white'>Product name: {product.name}</h2>
-                                <h2 className='text-center mt-3 text-white'>Quantity: {product.quantity}</h2>
-                                <hr className='text-white' style={{ height: '3px' }} />
+                                <h2 className='text-center mt-3'>Product name: {product.name}</h2>
+                                <h2 className='text-center mt-3 '>Quantity: {product.quantity}</h2>
+                                <hr style={{ height: '3px' }} />
                                 <form className='mb-3 mr-2' onSubmit={handleSubmit(onSubmit)}>
                                     <input className='me-2 text-center rounded-3 border-0' placeholder='Enter Price' type="number" {...register("quantity")} />
                                     <input className='updateQuantity-btn fw-bolder bg-info ms-2' type="submit" value="Restock" />

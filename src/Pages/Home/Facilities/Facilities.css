@@ -1,7 +1,5 @@
 .facilities-container {
-
     padding: 1rem;
-    margin: 4rem, 0rem;
 }
 
 .icon-img {
@@ -26,34 +24,19 @@
 .horizontal-line {
     height: 2px;
     width: 95%;
-    background-color: white;
     margin: 0 auto;
-    margin-top: 1rem;
 }
 
 .choose-container {
     text-align: center;
-    margin: 4rem;
+    margin: 2rem;
     border-radius: 15px;
     background: #ffff;
     padding: 2rem;
-    color: #ffff;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     border-radius: 10px;
+    -webkit-box-shadow: 3px 4px 8px 0px #000000;
+    box-shadow: 3px 4px 8px 0px rgba(31, 38, 135, 0.37); 
     border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.choose-container h2,
-h1 {
-    color: white;
-}
-
-body {
-    background: url(../../../Assets/images/background/background1.jpg);
-    background-attachment: fixed;
 }
 
 /* --------------------------------------------

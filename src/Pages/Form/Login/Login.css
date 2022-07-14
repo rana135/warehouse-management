@@ -36,17 +36,11 @@ input:hover {
 .input-wrapper {
     padding: 2px;
     border-radius: 7px;
-    background: #1b4388;
-    background: linear-gradient(25deg,
-            rgba(27, 67, 136, 1) 0%,
-            rgba(30, 144, 194, 1) 100%);
+    border:1px solid rgba(0, 42, 255, 0.731);
 }
 
 .login {
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }

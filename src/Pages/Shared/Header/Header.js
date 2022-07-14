@@ -17,21 +17,21 @@ const Header = () => {
         return <Loading></Loading>
     }
     return (
-        <Navbar collapseOnSelect expand="lg" sticky='top' className='d-flex align-items-center nav'>
+        <Navbar collapseOnSelect expand="lg" sticky='top' className='d-flex align-items-center nav' style={{background:"#231F20"}}>
             <Container>
                 <Navbar.Brand as={Link} to="/">
-                    <h1 className='text-info me-3 project-title fw-bolder'>⭐Star Furniture</h1>
+                    <h1 className='text-white me-3 project-title '>⭐Star Furniture</h1>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="home" className='text-info fw-bolder'>home</Nav.Link>
-                        <Nav.Link as={Link} to="blogs" className='text-info fw-bolder'>Blogs</Nav.Link>
+                        <Nav.Link as={Link} to="home" className='text-white '>home</Nav.Link>
+                        <Nav.Link as={Link} to="blogs" className='text-white '>Blogs</Nav.Link>
                         {
                             user && <>
-                                <Nav.Link as={Link} to="addService" className='text-info fw-bolder'>Add Item</Nav.Link>
-                                <Nav.Link as={Link} to="manageInventories" className='text-info fw-bolder'>Manage inventories</Nav.Link>
-                                <Nav.Link as={Link} to="myItem" className='text-info fw-bolder'>My Items</Nav.Link>
+                                <Nav.Link as={Link} to="addService" className='text-white '>Add Item</Nav.Link>
+                                <Nav.Link as={Link} to="manageInventories" className='text-white '>Manage inventories</Nav.Link>
+                                <Nav.Link as={Link} to="myItem" className='text-white '>My Items</Nav.Link>
                             </>
                         }
 
@@ -41,9 +41,9 @@ const Header = () => {
                     </div>
                     <Nav>
                         {user ?
-                            <button onClick={() => handleSignOut()} className='btn btn-info fw-bolder'>Sign Out</button>
+                            <button onClick={() => handleSignOut()} className='btn btn-info '>Sign Out</button>
                             :
-                            <Nav.Link as={Link} to="login" className='text-info fw-bolder'>
+                            <Nav.Link as={Link} to="login" className='text-white '>
                                 Login
                             </Nav.Link>}
                     </Nav>

@@ -2,7 +2,7 @@ import React from 'react';
 import useService from '../../hooks/useService';
 import Typed from 'react-typed';
 import './ManageInventories.css'
-import AddNewItem from './AddNewItem/AddNewItem';
+import { Link } from 'react-router-dom';
 
 const ManageInventories = () => {
     const [services, setServices] = useService()
@@ -25,8 +25,7 @@ const ManageInventories = () => {
     }
     return (
         <div>
-            <AddNewItem></AddNewItem>
-            <h1 style={{ marginTop: "6.5rem" }} className='text-center'>
+            <h1 style={{ marginTop: "2.5rem" }} className='text-center'>
                 <Typed
                     strings={[
                         'Manage Inventories']}
@@ -42,14 +41,21 @@ const ManageInventories = () => {
                             className='inventory shadow-lg' data-aos="flip-left"
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
-                            <img style={{height:"10rem"}} src={service.img} alt="" />
-                            <h3>{service.name}</h3>
+                            <img style={{ height: "10rem" }} src={service.img} alt="" />
+                            <h3 className='fw-bold'>{service.name}</h3>
                             <h5>Price:-$ {service.price}</h5>
                             <h5>Quantity:-{service.quantity}</h5>
                             <button onClick={() => handleDelete(service._id)} type="button" style={{ borderRadius: "50px" }} className="btn btn-info btn-md mx-auto d-block fw-bolder">DELETE</button>
                         </div>
                     )
                 }
+            </div>
+            <div className="d-flex justify-content-center">
+                <Link to='/addService'>
+                    <button variant="info" className='btn-lg btn-info fw-bolder'>
+                        ADD NEW ITEMS
+                    </button>
+                </Link>
             </div>
         </div>
     );

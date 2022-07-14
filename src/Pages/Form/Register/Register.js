@@ -65,7 +65,7 @@ const Register = () => {
         navigate("/login")
     }
     return (
-        <div className='col-lg-6 col-md-10 col-sm-12 col-12 mx-auto border p-5 m-5 rounded-3 register text-white'data-aos="zoom-in-down">
+        <div className='col-lg-6 col-md-10 col-sm-12 col-12 mx-auto border p-5 m-5 rounded-3 register'data-aos="zoom-in-down">
             <h1 className='text-center'>Register</h1>
             <Form noValidate validated={validated} onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -91,7 +91,7 @@ const Register = () => {
                     </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check onClick={() => setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms And Conditions" className={agree ? "text-info" : "text-white"} />
+                    <Form.Check onClick={() => setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms And Conditions" className={agree ? "text-primary" : "text-danger"} />
                 </Form.Group>
                 <Button
                     disabled={!agree}

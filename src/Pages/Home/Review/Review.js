@@ -18,7 +18,7 @@ const Review = (props) => {
                 </Flip>
                 <div>
                     <p className='reviews'><small>
-                        <Zoom top cascade>{reviews}</Zoom>
+                        {reviews}
                     </small></p>
                 </div>
             </div>

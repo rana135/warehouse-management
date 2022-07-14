@@ -82,8 +82,8 @@ const Login = () => {
 
   }
   return (
-    <div className='col-lg-6 col-md-10 col-sm-12 col-12 mx-auto border p-5 m-5 rounded-3 login text-white' data-aos="zoom-in-down">
-      <h1 className='text-center '>Login</h1>
+    <div className='col-lg-6 col-md-10 col-sm-12 col-12 mx-auto border p-5 m-5 rounded-3 login' data-aos="zoom-in-down">
+      <h1 className='text-center'>Login</h1>
       <Form noValidate validated={validated} onSubmit={handleLogin}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -106,8 +106,8 @@ const Login = () => {
       </Form>
       {errorElement}
       <div className='m-4'>
-        <p className='text-center mt-2 '>New to Start Furniture? <span onClick={navigateRegister}><u className='text-info'>Please Register</u></span></p>
-        <p className='text-center mt-2 '>Forget Password?<span className='ms-2' onClick={resetPassword}><u className='text-info'>Reset Password</u></span></p>
+        <p className='text-center mt-2 '>New to Start Furniture? <span onClick={navigateRegister}><u className='text-primary'>Please Register</u></span></p>
+        <p className='text-center mt-2 '>Forget Password?<span className='ms-2' onClick={resetPassword}><u className='text-primary'>Reset Password</u></span></p>
       </div>
       <div className='input-wrapper'>
         <button onClick={() => signInWithGoogle()} className='google-auth'>

@@ -3,7 +3,8 @@
     border-radius: 10px;
     margin: 15px;
     background-color: #ffffff;
-    
+    -webkit-box-shadow: 3px 4px 8px 0px #000000;
+    box-shadow: 3px 4px 8px 0px rgba(31, 38, 135, 0.37); 
 }
 .service:hover{
     transform: scale(1.1);

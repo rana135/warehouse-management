@@ -30,7 +30,7 @@ const AddService = () => {
             })
     }
     return (
-        <div className=' border mb-5 mt-5 p-5 rounded-3 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
+        <div className=' border mb-5 mt-5 p-5 rounded-3 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto serviceAdd-container'>
             <h1 className='text-center mb-4'>Please add service</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='serviceAdd-input'>

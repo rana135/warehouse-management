@@ -62,7 +62,7 @@ const MyItems = () => {
                                 data-aos-easing="ease-out-cubic"
                                 data-aos-duration="2000">
                                 <img style={{ height: "10rem" }} src={item.img} alt="" />
-                                <h3>{item.name}</h3>
+                                <h3 className='fw-bold'>{item.name}</h3>
                                 <h5>Price:-$ {item.price}</h5>
                                 <h5>Quantity:-{item.quantity}</h5>
                                 <button onClick={() => handleDelete(item._id)} type="button" style={{ borderRadius: "50px" }} className="btn btn-info btn-md mx-auto d-block fw-bolder">DELETE</button>

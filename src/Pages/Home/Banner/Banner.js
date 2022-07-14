@@ -29,7 +29,7 @@ const Banner = () => {
                             </Typed>
                         </h1>
                         <p className='text-white'>Star Furniture first opened its doors in 2006, in Miami, Florida. Since our inception, we have worked meticulously to improve both our internal processes and our outward appearance.</p>
-                        <button className='rounded-3 btn btn-lg'>MORE INFORMATION</button>
+                        <button className='rounded-3 btn btn-info btn-lg'>MORE INFORMATION</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -52,7 +52,7 @@ const Banner = () => {
                             </Typed>
                         </h1>
                         <p className='text-white'>Star Furniture first opened its doors in 2006, in Miami, Florida. Since our inception, we have worked meticulously to improve both our internal processes and our outward appearance.</p>
-                        <button className='rounded-3 btn btn-lg'>MORE INFORMATION</button>
+                        <button className='rounded-3 btn btn-info btn-lg'>MORE INFORMATION</button>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -75,7 +75,7 @@ const Banner = () => {
                             </Typed>
                         </h1>
                         <p className='text-white'>Star Furniture first opened its doors in 2006, in Miami, Florida. Since our inception, we have worked meticulously to improve both our internal processes and our outward appearance.</p>
-                        <button className=' rounded-3 btn btn-lg'>MORE INFORMATION</button>
+                        <button className=' rounded-3 btn btn-info btn-lg'>MORE INFORMATION</button>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

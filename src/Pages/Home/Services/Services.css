@@ -2,11 +2,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
-    margin-bottom: 5.8rem;
 }   
 .service-container{
-    background: url(../../../Assets/images/background/background4.jpg);
-    background-attachment: fixed;
     height: auto;
     width: 100%;
 }
