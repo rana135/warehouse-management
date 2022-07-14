@@ -4,7 +4,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div style={{ background: " #231F20" }} className="mb-3 mt-5">
+        <div style={{ background: "#414a4c" }} className="mb-3 mt-5">
             <div className='text-center text-white'>
                 <div>
                     <p>Copyright © 2022 <span className=' text-lowercase'>Star Furniture</span></p>

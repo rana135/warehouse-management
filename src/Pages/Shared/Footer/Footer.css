@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     color: white;
     background-color:
-    #231F20;
+    #414a4c;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
@@ -20,18 +20,18 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .footer-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .details {
         text-align: center;
     }
     .footer-header {
-        font-size: xx-large;
+        font-size: 16px;
         text-align: center;
     }
 
     .details p {
-        font-size: large;
+        font-size: 12px;
     }
 }
 
@@ -46,7 +46,7 @@
     }
 
     .footer-header {
-        font-size: xx-large;
+        font-size: x-large;
         text-align: center;
     }
 

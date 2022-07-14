@@ -17,7 +17,7 @@ const Header = () => {
         return <Loading></Loading>
     }
     return (
-        <Navbar collapseOnSelect expand="lg" sticky='top' className='d-flex align-items-center nav' style={{background:"#231F20"}}>
+        <Navbar collapseOnSelect expand="lg" sticky='top' className='d-flex align-items-center nav' style={{background:"#414a4c"}}>
             <Container>
                 <Navbar.Brand as={Link} to="/">
                     <h1 className='text-white me-3 project-title '>⭐Star Furniture</h1>

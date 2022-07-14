@@ -108,7 +108,7 @@ const ServiceDetails = () => {
                     <div data-aos="zoom-in-down">
                         <div className='text-center mt-5 mb-5 rounded-3
                 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
-                            <div className='delivered text-white' style={{background:"#207398"}}>
+                            <div className='delivered text-white' style={{background:"#414a4c"}}>
                                 <div data-aos="zoom-in">
                                     <div className='fs-1 fw-bold'>
                                         Do you really want to restock inventory it?
