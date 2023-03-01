@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Hall Furniture",
+        "price": "589",
+        "description": "Are you looking for inspiring ideas to decorate your hall? Here are a sample.The double-door pantry closet has one stationary shelf with a weight limit of 20lbs and three adjustable/removable shelves with a weight limit of 15lbs each",
+        "img": "https://i.ibb.co/g6LM4GQ/hall.png",
+        "sold":"50",
+        "quantity":"150",
+        "supplierName":"KNGC LTD"
+    },
+    {
+        "name": "Nursery Furniture",
+        "price": "550",
+        "description": "Original, authentic design Inspired by shapes and colors from one of our favorite modern era’s. This nursery furniture set includes a crib, dresser, and changing table topper, completing your little one's space in a snap.",
+        "img": "https://i.ibb.co/7zdF916/nursery.png",
+        "sold":"35",
+        "quantity":"100",
+        "supplierName":"HKSH CONG"
+    },
+    {
+        "name": "Bathroom Furniture",
+        "price": "790",
+        "description": "Four solid wooden legs suspend the 71 long freestanding tub from the ground. Orchestrating this unique modernist design involved boldly re-envisioning the potential of the modern freestanding tub.",
+        "img": "https://i.ibb.co/4WBqccY/bathroom.png",
+        "sold":"30",
+        "quantity":"80",
+        "supplierName":"GDC LTD"
+    },
+    {
+        "name": "Bedroom Furniture",
+        "price": "850",
+        "description": "Hypnus is what dreams are made of. With a full panel headboard, slender legs, and clean lines, this bed sets contemporary styling.",
+        "img": "https://i.ibb.co/WfXp19Q/bedroom.png",
+        "sold":"10",
+        "quantity":"30",
+        "supplierName":"dician LTD"
+    },
+    {
+        "name": "Dining Furniture",
+        "price": "450",
+        "description": "A real American Walnut wood modern farmhouse table, paired with the eclectic to modern dining chairs or the matching bench made for this table.",
+        "img": "https://i.ibb.co/fNhJ3Lq/dining.png",
+        "sold":"15",
+        "quantity":"40",
+        "supplierName":"Soft LTD"
+    },
+    {
+        "name": "Kitchen Furniture",
+        "price": "625",
+        "description": "Pretend stove burner features fun lights and cooking sounds Plenty of kitchen storage space, including the recycle bin, hooks for hanging utensils and tea/coffee cups.",
+        "img": "https://i.ibb.co/DL13DWX/kitchen.png",
+        "sold":"20",
+        "quantity":"50",
+        "supplierName":"Urban Office"
+    }
+]

@@ -16,7 +16,7 @@ const Service = ({ service }) => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <img style={{height:"10rem"}} src={img} alt="" />
-                <h3 className='fw-bold'>{name}</h3>
+                <h3>{name}</h3>
                 <h5>Price:-$ {price}</h5>
                 <h5>Quantity:-{quantity}</h5>
                 <p>{description}</p>

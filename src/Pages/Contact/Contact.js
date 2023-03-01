@@ -13,7 +13,7 @@ const Contact = (message) => {
             <div className='d-flex justify-content-center p-3'>
                 <div className="mb-3">
                     <label for="exampleFormControlInput1" className="form-label">Name</label>
-                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Your name" />
+                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Your name" required />
                 </div>
                 <div className="mb-3 ms-3">
                     <label for="exampleFormControlInput1" className="form-label">Email</label>
