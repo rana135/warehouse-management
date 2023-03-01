@@ -12,7 +12,7 @@ const MyItems = () => {
         const getItems = async () => {
             const email = user.email;
             console.log(email);
-            const url = `https://tranquil-beyond-66752.herokuapp.com/product?email=${email}`;
+            const url = `https://star-furniture-server-lemon.vercel.app/product?email=${email}`;
 
             try {
                 const { data } = await axios.get(url, {
@@ -36,7 +36,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are You Sure?")
         if (proceed) {
-            const url = `https://tranquil-beyond-66752.herokuapp.com/product/${id}`
+            const url = `https://star-furniture-server-lemon.vercel.app/product/${id}`
             fetch(url, {
                 method: "DELETE",
             })

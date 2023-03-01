@@ -11,7 +11,7 @@ const AddService = () => {
     // Product Added by Form:
     const onSubmit = (data) => {
         console.log(data)
-        const url = `https://tranquil-beyond-66752.herokuapp.com/product`
+        const url = `https://star-furniture-server-lemon.vercel.app/product`
         fetch(url, {
             method: 'POST',
             headers: {
@@ -22,7 +22,7 @@ const AddService = () => {
             .then(res => res.json())
             .then(result => {
                 console.log(result);
-                if(result){
+                if (result) {
                     toast.success("Item Added Successfully")
                 }
                 reset()
@@ -33,10 +33,10 @@ const AddService = () => {
             <h1 className='text-center mb-4'>Please add service</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='serviceAdd-input'>
-                    <input value={user?.email} className='mb-2' type="email" 
-                    {...register("email")}/>
+                    <input value={user?.email} className='mb-2' type="email"
+                        {...register("email")} />
                     <input placeholder='name' className='mb-2' {...register("name", { required: true, maxLength: 20 })} />
-                    <input placeholder='Description' className='mb-2' {...register("description", { required: true})} />
+                    <input placeholder='Description' className='mb-2' {...register("description", { required: true })} />
                     <input placeholder='Supplier Name' className='mb-2' {...register("supplierName", { required: true, maxLength: 30 })} />
                     <input placeholder='price' className='mb-2' type="number" {...register("price")} />
                     <input placeholder='quantity' className='mb-2' type="number" {...register("quantity")} />

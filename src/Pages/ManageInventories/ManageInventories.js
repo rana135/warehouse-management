@@ -10,7 +10,7 @@ const ManageInventories = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are You Sure?")
         if (proceed) {
-            const url = `https://tranquil-beyond-66752.herokuapp.com/product/${id}`
+            const url = `https://star-furniture-server-lemon.vercel.app/product/${id}`
             fetch(url, {
                 method: "DELETE",
             })

@@ -59,7 +59,7 @@ const Login = () => {
     const password = passwordRef.current.value;
     await signInWithEmailAndPassword(email, password)
     await signInWithEmailAndPassword(email, password)
-    const { data } = await axios.post('https://tranquil-beyond-66752.herokuapp.com/login', { email })
+    const { data } = await axios.post('https://star-furniture-server-lemon.vercel.app/login', { email })
     console.log(data)
     localStorage.setItem('accessToken', data.accessToken)
     navigate(from, { replace: true });

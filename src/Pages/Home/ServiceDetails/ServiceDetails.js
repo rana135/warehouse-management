@@ -15,7 +15,7 @@ const ServiceDetails = () => {
 
     // Single product
     useEffect(() => {
-        const url = `https://tranquil-beyond-66752.herokuapp.com/product/${productId}`
+        const url = `https://star-furniture-server-lemon.vercel.app/product/${productId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -25,7 +25,7 @@ const ServiceDetails = () => {
     const handleUpdate = (event) => {
         const quantity = parseFloat(product?.quantity) - 1;
         const update = { quantity }
-        const url = `https://tranquil-beyond-66752.herokuapp.com/product/${productId}`;
+        const url = `https://star-furniture-server-lemon.vercel.app/product/${productId}`;
         fetch(url, {
             method: "PUT",
             headers: {
@@ -45,7 +45,7 @@ const ServiceDetails = () => {
     const onSubmit = (data) => {
         const quantity = parseFloat(data?.quantity) + parseFloat(product?.quantity);
         const update = { quantity }
-        const url = `https://tranquil-beyond-66752.herokuapp.com/product/${productId}`;
+        const url = `https://star-furniture-server-lemon.vercel.app/product/${productId}`;
         fetch(url, {
             method: "PUT",
             headers: {
@@ -108,7 +108,7 @@ const ServiceDetails = () => {
                     <div data-aos="zoom-in-down">
                         <div className='text-center mt-5 mb-5 rounded-3
                 col-lg-10 col-md-10 col-sm-12 col-12 mx-auto'>
-                            <div className='delivered text-white' style={{background:"#414a4c"}}>
+                            <div className='delivered text-white' style={{ background: "#414a4c" }}>
                                 <div data-aos="zoom-in">
                                     <div className='fs-1 fw-bold'>
                                         Do you really want to restock inventory it?
